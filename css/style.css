@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    float: left;
+}
+
+.row {
+    width: 95vw;
+    height: auto;
+}
+
+div {
+    border: solid green;
+}
