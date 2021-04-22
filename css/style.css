@@ -9,5 +9,17 @@
 }
 
 div {
-    border: solid green;
+    border: thin solid green;
+}
+
+.header {
+
+}
+
+.center {
+    
+}
+
+.footer {
+    
 }
