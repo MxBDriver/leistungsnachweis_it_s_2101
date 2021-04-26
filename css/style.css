@@ -4,8 +4,8 @@
 } */
 
 body {
-    height: 100%;
-    width: 99%;
+    height: 95vh;
+    width: 98vw;
     float: left;
     background-image: url(../pics/background1.JPG);
     background-position: center;
@@ -20,25 +20,30 @@ body {
 }  */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 1em;
     float: left;
-    height: 10%;
-    width: 100vw;
+    height: 8%;
+    width: 98.8vw;
     position: inherit;
 }
 
 .center {
     float: left;
+    left: 1em;
     height: 80%;
-    width: 100vw;
+    width: 98.8vw;
     color: aliceblue;    
 }
 
 .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 1.8em;
+    left: 1em; 
     float: left;
-    height: 5%;
-    width: 100vw;    
+    height: 5vh;
+    width: 98.8vw;    
     color: aliceblue;
     border: thin solid green;
 }
@@ -51,7 +56,7 @@ body {
 
 } */
 
-.fa {
+/* .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -61,27 +66,67 @@ body {
   }
 
   .fa:hover {
-    opacity: 0.7;
+    opacity: 0.7; 
+} */
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 0px;
+}
+/*---- Genral classes end -------*/
+
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.8em;
+
 }
 
-/* .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
 
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
+.social-icons.icon-rounded .fa{
+	border-radius:5px;
+}
 
+/* .social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg); 
+} */
 
+.social-icons .fa-facebook-square{
+    background-color:#3C599F;
+}
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
- 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-  } */
+.social-icons .fa-instagram{
+    background-color:#e97939;
+}
+
+.social-icons .fa-twitch{
+    background-color:indigo;
+}
+
+.social-icons .fa-twitter-square{
+    background-color:#32CCFE;
+} 
+
+.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
