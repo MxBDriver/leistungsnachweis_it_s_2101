@@ -1,25 +1,37 @@
-* {
+/* * {
     box-sizing: border-box;
     float: left;
+} */
+
+body {
+    float: left;
+    background-image: url(../pics/background1.JPG);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    
+
 }
 
-.row {
-    width: 95vw;
-    height: auto;
-}
-
-div {
+/* div {
     border: thin solid green;
-}
+}  */
 
 .header {
-
+    float: left;
+    height: 15%;
+    width: 100vw;
 }
 
 .center {
-    
+    float: left;
+    height: 75%;
+    color: aliceblue;    
 }
 
 .footer {
     
+    float: left;
+    height: 10%;    
+    color: aliceblue;
 }
