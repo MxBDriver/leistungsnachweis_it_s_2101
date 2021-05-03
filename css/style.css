@@ -142,3 +142,18 @@ body {
 /* .social-icons .fa-whatsapp{
     background-color:#25d366;
 }  */
+
+@media (max-width: 546px) {
+    /* Mittlere Bildschirme */
+    .footer {
+        float: left;
+        position: fixed;
+        bottom: 0.6em;
+        left: 1em; 
+        height: 5%;
+        width: 99.8vw;    
+        color: aliceblue;
+        /* border: thin solid green; */
+    }
+}
+
