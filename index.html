@@ -12,7 +12,8 @@
 
     <title>Modding @ it's Best</title>
   </head>
-  <body class="col-sm">
+
+  <body class="col-sm"> <!-- Navbar & Search -->
       <nav class="navbar-header navbar navbar-expand-sm navbar-light bg-light ">
         <div class="container-fluid ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,10 +97,16 @@
           </div>
         </div>
       </div>
-      <div  class="col-sm-2"> <!-- Wetter Widget -->
-          
+      <div  class="row col-sm-2"> <!-- Wetter Widget -->
+          <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/de/49d119d74/schwabisch-hall/" data-label_1="SCHWÄBISCH HALL" data-label_2="WETTER" data-icons="Climacons Animated" data-days="3" data-theme="clear" >SCHWÄBISCH HALL WETTER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+          </div>
       </div>
     </div>
+
     <!-- Footer mit Social Media Icons -->
     <div class="row footer me-md-3"> 
        <div class="container smedia"> 
