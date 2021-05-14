@@ -25,31 +25,21 @@ body {
 
 }
 
-/* div {
-    border: thin solid green;
-}  */
-
-/* .header {
-    position: fixed;
-    top: 0;
-    left: 1em;
-    float: left;
-    height: 6%;
-    width: 98.8vw;
-    
-} */
+.navbar {
+    width: 100% !important;
+}
 
 .center {
     display: flex;
     position: relative;
-    left: 2rem;
-    top: 1rem;
+    left: 2em;
+    top: 1em;
     height: 80%;
     width: 99.8vw;
     place-items: center;
     line-height: 1.6;
     color: aliceblue;
-    opacity: 0.9;    
+    opacity: 0.95;    
 }
 
 .card.c1 {
@@ -232,10 +222,9 @@ body {
 }
 
 .footer {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */ 
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     position: fixed;
     bottom: 0.15em;
     left: 1em; 
@@ -351,3 +340,53 @@ body {
 }
 
     /* mods.html */
+
+h1 {
+    color: var(--clr-neutral-100);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    background-color: var(--clr-accent-400);
+    max-width: max-content;
+    padding: 0.25em;
+    border-radius: 0.5rem;
+    opacity: 0.95;
+}
+
+.fancybox {
+    width: 80%;
+    height: 80%;
+    /* column-count: 3; */
+    margin: 0 auto;
+    
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+@media only screen and (max-width: 520px) {
+    .fancybox {
+        column-count: 1;
+    }
+
+}
+
+@media only screen and (min-width: 520px) {
+    .fancybox {
+        column-count: 2;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+    .fancybox {
+        column-count: 3;
+    }
+
+}
