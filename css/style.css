@@ -228,6 +228,7 @@ body {
     /* display: flex; */
     position: relative;
     margin-left: 5rem;
+    max-width: 35ch;
 }
 
 .footer {
@@ -334,46 +335,6 @@ body {
     background-color:#25d366;
 }  */
 
-
- @media (max-width: 1320px) {
-     /* kleinere Bildschirme  */
-    .footer {
-        float: left;
-        position: fixed;
-        bottom: 0.6em;
-        left: 1em; 
-        height: 5%;
-        width: 99.8vw;    
-        color: aliceblue;
-    }
-}
-
-@media (min-width: 1320px) {
-     /* Mittlere Bildschirme  */
-    .footer {
-        float: left;
-        position: fixed;
-        bottom: 0.6em;
-        left: 1em; 
-        height: 5%;
-        width: 99.8vw;    
-        color: aliceblue;
-    }
-}
-
-@media (min-width: 1920px) {
-     /* große Bildschirme  */
-    .footer {
-        float: left;
-        position: fixed;
-        bottom: 0.15em;
-        left: 1em; 
-        height: 5%;
-        width: 99.8vw;    
-        color: aliceblue;
-    }
-} 
-
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -388,3 +349,5 @@ body {
         transition-delay: 0 !important;
     }
 }
+
+    /* mods.html */
