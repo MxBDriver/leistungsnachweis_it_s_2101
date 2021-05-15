@@ -38,7 +38,7 @@ body, html {
 .center {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     height: 80%;
     width: 99.8vw;
     line-height: 1.6;
@@ -48,6 +48,7 @@ body, html {
 }
 
 h1 {
+    display: flex;
     color: var(--clr-neutral-100);
     text-align: center;
     margin-top: 1em;
@@ -58,11 +59,11 @@ h1 {
     max-width: max-content;
     padding: 0.25em;
     border-radius: 0.5rem;
-    opacity: 0.95;
+    opacity: 0.92;
 }
 
 .card-wrapper {
-    flex: 1 1 70%;
+    flex-basis: 100%;
     min-width: 20ch;
     left: 2em;
     /* gap: 1em; */
@@ -72,7 +73,7 @@ h1 {
     color: var(--clr-neutral-100);
     padding: 10em 0 0;
     max-width: 35ch;
-    height: 25em;
+    height: min-content;
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 1rem;
@@ -112,6 +113,18 @@ h1 {
 
 .c6 {
     background-image: url(../pics/Chieftronic-Nova-04-780x470.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c7 {
+    background-image: url(../pics/360P-SE-Aio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c8 {
+    background-image: url(../pics/mod2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -158,10 +171,11 @@ h1 {
 }
 
 .card-body {
-    color: rgb(255 255 255 / 0.85)
+    color: rgb(255 255 255 / 0.90)
 }
 
 @media (hover) {
+
     .card-content {
         transform: translateY(65%);
         transition: transform 500ms ease;
@@ -338,7 +352,6 @@ h1 {
 .fancybox {
     width: 80%;
     height: 80%;
-    /* column-count: 3; */
     margin: 0 auto;
 }
 
