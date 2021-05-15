@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap');
 
 :root {
     --clr-neutral-900: black;
@@ -20,105 +20,100 @@ body, html {
     background-position: center;
     background-attachment: fixed; 
     background-size: cover;
-    /* font-family: 'Exo 2', sans-serif;  */
-    /* Fonts machen design probleme */
-
+    font-family: 'Exo 2', sans-serif;  
 }
 
-.navbar {
-    width: 100% !important;
+.navbar-header {
+    max-width: 99.8% !important;
 }
+
+/* .navbar-light {
+   
+} */
+
+/* .bg-light {
+
+} */
 
 .center {
     display: flex;
     position: relative;
-    /* left: 2em; */
-    top: 1em;
     margin: 0 auto;
     height: 80%;
     width: 99.8vw;
-    place-items: center;
     line-height: 1.6;
-    color: aliceblue;
-    opacity: 0.95;    
+    gap: 1em;
+    flex-wrap: wrap;
+    
 }
 
-.card.c1 {
+h1 {
     color: var(--clr-neutral-100);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: var(--clr-accent-400);
+    max-width: max-content;
+    padding: 0.25em;
+    border-radius: 0.5rem;
+    opacity: 0.95;
+}
+
+.card-wrapper {
+    flex: 1 1 70%;
+    min-width: 20ch;
+    left: 2em;
+    /* gap: 1em; */
+}
+
+.card {
+    color: var(--clr-neutral-100);
+    padding: 10em 0 0;
+    max-width: 35ch;
+    height: 25em;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1rem;
+
+    transition: transform 500ms ease;
+}
+
+.c1 {
     background-image: url(../pics/mod1.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
-.card.c2 {
-    color: var(--clr-neutral-100);
+.c2 {
     background-image: url(../pics/mod2.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-    
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
-.card.c3 {
-    color: var(--clr-neutral-100);
+.c3 {
     background-image: url(../pics/mod3.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-    
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
-.card.c4 {
-    color: var(--clr-neutral-100);
+.c4 {
     background-image: url(../pics/mod4.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-    
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
-.card.c5 {
-    color: var(--clr-neutral-100);
-    background-image: url(../pics/);
+.c5 {
+    background-image: url(../pics/CM-silencio-S600.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-    
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
-.card.c6 {
-    color: var(--clr-neutral-100);
-    background-image: url(../pics/);
+.c6 {
+    background-image: url(../pics/Chieftronic-Nova-04-780x470.jpg);
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin: 1rem;
-    
-    transition: transform 500ms ease;
+    background-position: center;
 }
 
 .card:hover,
@@ -136,6 +131,7 @@ body, html {
     );
     transform: translateY(65%);
     transition: transform 500ms ease;
+    overflow: hidden;
 }
 
 .card-title {
@@ -202,7 +198,7 @@ body, html {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
-    color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
     background-color: var(--clr-accent-400);
     padding: 0.5em 1.25em;
     border-radius: 0.25em;
@@ -211,15 +207,23 @@ body, html {
 
 .button:hover,
 .button:focus {
+    color: var(--clr-accent-400);
     background-color: var(--clr-neutral-100);
 }
 
 /* weather widget */
+
+.wth-wrapper {
+    display: flex;
+    flex: 1 1 25%;
+    min-width: 10em;
+    
+}
+
 .weather {
-    /* display: flex; */
     position: relative;
-    margin-left: 5rem;
-    max-width: 35ch;
+    padding: 1em;
+    
 }
 
 .footer {
@@ -231,18 +235,9 @@ body, html {
     left: 1em; 
     height: 5%;
     width: 99.8vw;    
-    color: aliceblue;
     flex-direction: column;
-    /* border: thin solid green; */
+    
 }
-
-/* .navbar-light {
-
-} */
-
-/* .bg-light {
-
-} */
 
 .smedia {
     display: flex;
@@ -265,10 +260,7 @@ body, html {
 	position: relative;
     list-style: none;
     margin: 5px;
-    /* display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px; */
+    
 }
 /*---- Genral classes end -------*/
 
@@ -343,20 +335,6 @@ body, html {
 
     /* mods.html */
 
-h1 {
-    color: var(--clr-neutral-100);
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    background-color: var(--clr-accent-400);
-    max-width: max-content;
-    padding: 0.25em;
-    border-radius: 0.5rem;
-    opacity: 0.95;
-}
-
 .fancybox {
     width: 80%;
     height: 80%;
@@ -376,6 +354,15 @@ h1 {
     .fancybox {
         column-count: 1;
     }
+    .card-wrapper {
+        flex-direction: row;
+        column-count: 1;
+    }
+
+    .wth-wrapper {
+        flex-direction: column;
+        column-count: 1;
+    }
 
 }
 
@@ -384,6 +371,16 @@ h1 {
         column-count: 2;
     }
 
+    .card-wrapper {
+        flex-direction: column;
+        column-count: 2;
+    }
+
+    .wth-wrapper {
+        flex-direction: column;
+        column-count: 1;
+    
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -391,6 +388,14 @@ h1 {
         column-count: 3;
     }
 
+    .card-wrapper {
+        flex-direction: column;
+        column-count: 3;
+    }
+
+    .wth-wrapper {
+        flex-direction: column;
+    }
 }
 
 /* reviews.html */
