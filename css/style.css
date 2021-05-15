@@ -48,7 +48,6 @@ body, html {
 }
 
 h1 {
-    display: flex;
     color: var(--clr-neutral-100);
     text-align: center;
     margin-top: 1em;
@@ -64,6 +63,7 @@ h1 {
 
 .card-wrapper {
     flex-basis: 100%;
+    /* justify-content: space-around; */
     min-width: 20ch;
     left: 2em;
     /* gap: 1em; */
@@ -125,6 +125,30 @@ h1 {
 
 .c8 {
     background-image: url(../pics/mod2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c9 {
+    background-image: url(../pics/lc-power-rev.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c10 {
+    background-image: url(../pics/rx6700xt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c11 {
+    background-image: url(../pics/galax-hof3090.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c12 {
+    background-image: url(../pics/lc-power-rev.jpg);
     background-size: cover;
     background-position: center;
 }
