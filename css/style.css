@@ -27,6 +27,8 @@ body, html {
     max-width: 99.8% !important;
 }
 
+
+
 /* .navbar-light {
    
 } */
@@ -57,7 +59,7 @@ h1 {
     background-color: var(--clr-accent-400);
     max-width: max-content;
     padding: 0.25em;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     opacity: 0.92;
 }
 
@@ -435,5 +437,29 @@ h1 {
     }
 }
 
-/* reviews.html */
+/* kontakt.html */
+.kon-formular {
+    position: relative;
+    /* align-items: center; */
+    /* justify-content: center;  */
+    text-align: center !important;
+    font-size: 1.2em;
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--clr-neutral-900) ;
+    color: var(--clr-accent-400);
+    opacity: 0.9;
+    border-radius: 0.5em;
+}
 
+/* impressum.html */
+.box {
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    text-align: center !important;
+    background-color: var(--clr-neutral-900) ;
+    color: var(--clr-neutral-100);
+    opacity: 0.9;
+    border-radius: 0.5em;
+}

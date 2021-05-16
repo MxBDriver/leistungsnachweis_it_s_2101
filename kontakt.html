@@ -47,41 +47,45 @@
       </nav>
     
 
-    <div class="center col-sm-12">
-      <h1>Kontaktwünsche hier</h1>
-        <div>
-          <form id="kontakt" name="kontakt">
-            <label for="nameko">Name:</label>
-            <input type="text" id="nameko" name="nameko" placeholder="Name"><br><br>
-            <label for="mailko">Mail:</label>
-            <input type="email" id="mailko" name="mailko" placeholder="@ E-Mail"><br><br>
-            <label for="telko">&nbspTel:</label>
-            <input type="text" id="telko" name="telko" placeholder="Telefonnummer"><br><br>
-            <label for="bauteil">Hinweis:</label>
+    <div class="col-sm-12 ">
+      <div><h1>Kontaktwünsche hier</h1> </div>
+        <br>
+          <!-- Kontakt Formular -->
+        <div class="kon-formular ">
+            <form id="kontakt" name="kontakt">
+              <label for="nameku"> <strong> Name: </strong></label>
+              <input type="text" id="nameku" name="nameku" placeholder="Name"><br><br>
+              <label for="mailku"><strong>Mail: </strong></label>
+              <input type="email" id="mailku" name="mailku" placeholder="@ E-Mail"><br><br>
+              <label for="telku"><strong>&nbspTel: </strong></label>
+              <input type="text" id="telku" name="telku" placeholder="Telefonnummer"><br><br>
+              <label for="auswahl"><strong>Auswahl: </strong></label> 
 
-          <select id="bauteil">
-            <option value="0"></option>
-            <option value="Netzteil">Netzteil</option>
-            <option value="Mainboard">Mainboard</option>
-            <option value="Grafikkarte">Grafikkarte</option>
-            <option value="Prozessor">Prozessor</option>
-            <option value="RAM">RAM</option>
-            <option value="Kühlung">Kühlung</option>
-            <option value="Komplettsysteme">Komplettsystem</option>
-            <option value="Reparatur">Reparatur</option>
-            <option value="Optimiereung">Optimiereung</option>
-            <option value="Fehler/Probleme">Fehler/Probleme</option>
-          </select><br/>
-
-            <label for="anliegen">Anliegen:</label>
-            <textarea id="anliegen" name="anliegen" rows="5" cols="25" placeholder="Ihr Anliegen ..."></textarea>
-              <br><br>
-            <input type="submit" value="Submit">
-          </form>
-
-        </div>
-
+            <select id="bauteil">
+              <option value="0"></option>
+              <option value="Veredelung">Veredelung</option>
+              <option value="Reparatur">Reparatur</option>
+              <option value="Optimiereung">Optimiereung</option>
+              <option value="Fehler/Probleme">Fehler/Probleme</option>
+              <option value="Anfrage">Anfrage</option>
+              <option value="Netzteil">Netzteil</option>
+              <option value="Mainboard">Mainboard</option>
+              <option value="Grafikkarte">Grafikkarte</option>
+              <option value="Prozessor">Prozessor</option>
+              <option value="RAM">RAM</option>
+              <option value="Wasserkühlung">Wasserkühlung</option>
+              
+            </select><br/>
+            <br>
+              <label for="anliegen"><strong>Anliegen:</strong></label>
+              <textarea id="anliegen" name="anliegen" rows="5" cols="25" placeholder="Ihr Anliegen ..."></textarea>
+                <br><br>
+              <input type="submit" value="Senden">
+            </form>
+          </div>
     </div>
+      
+    
 
     <div class="footer col-sm-12">
         Test    
@@ -95,13 +99,13 @@
 
     <script>
       kontakt.addEventListener('submit', (event) => {
-      let nameko = document.querySelector("#nameko").value;
-      let mailko = document.querySelector("#mailko").value;
-      let telko = document.querySelector("#telko").value;
-      let bauteil = document.querySelector("#bauteil").value;
+      let nameko = document.querySelector("#nameku").value;
+      let mailko = document.querySelector("#mailku").value;
+      let telko = document.querySelector("#telku").value;
+      let bauteil = document.querySelector("#auswahl").value;
       const msg = document.querySelector("#anliegen").value;
           
-      alert("Name : "+ nameko + "\nMail :"+ mailko + "\nTel : "+telko + "\nBauteil : "+ bauteil + "\nAnliegen : " + msg);
+      alert("Name : "+ nameku + "\nMail :"+ mailku + "\nTel : "+telku + "\nAuswahl : "+ Auswahl + "\nAnliegen : " + msg);
 
       });
   </script>
