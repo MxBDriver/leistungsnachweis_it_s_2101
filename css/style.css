@@ -23,20 +23,14 @@ body, html {
     font-family: 'Exo 2', sans-serif;  
 }
 
+    /*===============
+    ==== Navbar=== */
 .navbar-header {
     max-width: 99vw!important;
 }
 
-
-
-/* .navbar-light {
-   
-} */
-
-/* .bg-light {
-
-} */
-
+    /*===============
+    ==== Center=== */
 .center {
     display: flex;
     position: relative;
@@ -63,6 +57,8 @@ h1 {
     opacity: 0.92;
 }
 
+    /*===============
+    ==== Cards=== */
 .card-wrapper {
     flex-basis: 100%;
     /* justify-content: space-around; */
@@ -250,8 +246,12 @@ h1 {
     color: var(--clr-accent-400);
     background-color: var(--clr-neutral-100);
 }
+    /*===============
+    == End Cards === */
 
-/* weather widget */
+
+    /*===============
+    == weather widget */
 
 .wth-wrapper {
     display: flex;
@@ -265,6 +265,9 @@ h1 {
     padding: 1em;
     
 }
+
+    /*================= 
+    Footer mit Social Media Icons */
 
 .footer {
     display: flex;
@@ -358,6 +361,9 @@ h1 {
     background-color:#25d366;
 }  */
 
+    /*================= 
+    ==== END Footer ===*/
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -373,7 +379,8 @@ h1 {
     }
 }
 
-    /* mods.html */
+    /*================= 
+    === mods.html ===*/
 
 .fancybox {
     width: 80%;
@@ -388,6 +395,8 @@ h1 {
     border-radius: 0.5em;
 }
 
+    /*========================= 
+    === Responsive Settings ===*/
 
 @media only screen and (max-width: 520px) {
     .fancybox {
@@ -437,7 +446,9 @@ h1 {
     }
 }
 
-/* kontakt.html */
+    /*================= 
+    === kontakt.html ===*/
+
 .kon-formular {
     position: relative;
     /* align-items: center; */
@@ -452,7 +463,9 @@ h1 {
     border-radius: 0.5em;
 }
 
-/* impressum.html */
+    /*================= 
+    === impressum.html ===*/
+    
 .box {
     position: relative;
     align-items: center;
