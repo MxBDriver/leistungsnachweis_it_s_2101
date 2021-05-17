@@ -37,7 +37,6 @@ body, html {
     /* margin: 0 auto; */
     height: 80%;
     width: 99.8vw;
-    line-height: 1.6;
     gap: 1em;
     flex-wrap: wrap;
     
@@ -259,15 +258,13 @@ h1 {
 .wth-wrapper {
     display: flex;
     flex-direction: column;
-    flex: 1 1 25%;
+    flex: 1 1 20%;
     min-width: 10em;
-    
 }
 
 .weather {
     position: relative;
     padding: 1em;
-    
 }
 
     /*================= 
@@ -385,21 +382,6 @@ h1 {
     /*================= 
     ==== END Footer ===*/
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms
-        !important;
-        animation-iteration-count: 1
-        !important;
-        transition-duration: 0.01ms
-        !important;
-        scroll-behavior: auto !important;
-        transition-delay: 0 !important;
-    }
-}
-
     /*================= 
     === mods.html ===*/
 
@@ -503,5 +485,23 @@ h1 {
     
         .card {
             max-width: 30ch;
+            /* flex: 1 1 15em; */
         }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms
+            !important;
+            animation-iteration-count: 1
+            !important;
+            transition-duration: 0.01ms
+            !important;
+            scroll-behavior: auto !important;
+            transition-delay: 0 !important;
+        }
+    }
+    
+    
