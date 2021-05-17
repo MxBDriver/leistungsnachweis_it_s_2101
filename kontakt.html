@@ -61,15 +61,15 @@
             <!-- Kontakt Formular -->
           <div class="kon-formular ">
                 <form id="kontakt" name="kontakt">
-                  <label for="nameku"> <strong> Name: </strong></label>
-                  <input type="text" id="nameku" name="nameku" placeholder="Name"><br><br>
-                  <label for="mailku"><strong>Mail: </strong></label>
-                  <input type="email" id="mailku" name="mailku" placeholder="@ E-Mail"><br><br>
+                  <label for="nameko"> <strong> Name: </strong></label>
+                  <input type="text" id="nameko" name="nameko" placeholder="Name"><br><br>
+                  <label for="mailko"><strong>Mail: </strong></label>
+                  <input type="email" id="mailko" name="mailko" placeholder="@ E-Mail"><br><br>
                   <label for="telku"><strong>&nbspTel: </strong></label>
-                  <input type="text" id="telku" name="telku" placeholder="Telefonnummer"><br><br>
+                  <input type="text" id="telko" name="telko" placeholder="Telefonnummer"><br><br>
                   <label for="auswahl"><strong>Auswahl: </strong></label> 
 
-                <select id="bauteil">
+                <select id="auswahl">
                   <option value="0"></option>
                   <option value="Veredelung">Veredelung</option>
                   <option value="Reparatur">Reparatur</option>
@@ -84,9 +84,9 @@
                   <option value="Wasserkühlung">Wasserkühlung</option>
                 </select><br/>
 
-                <!-- <br> -->
+                <br>
                   <label for="anliegen"><strong>Anliegen:</strong></label>
-                  <textarea id="anliegen" name="anliegen" rows="5" cols="25" placeholder="Ihr Anliegen ..."></textarea>
+                  <textarea id="anliegen" name="anliegen" rows="5" cols="20" placeholder="Ihr Anliegen ..."></textarea>
                     <br><br>
                   <input type="submit" value="Submit">
                 </form>
@@ -117,13 +117,13 @@
 
     <script>
       kontakt.addEventListener('submit', (event) => {
-      let nameku = document.querySelector("#nameku").value;
-      let mailku = document.querySelector("#mailku").value;
-      let telku = document.querySelector("#telku").value;
+      let nameko = document.querySelector("#nameko").value;
+      let mailko = document.querySelector("#mailko").value;
+      let telko = document.querySelector("#telko").value;
       let auswahl = document.querySelector("#auswahl").value;
       const msg = document.querySelector("#anliegen").value;
           
-      alert("Name : "+ nameku + "\nMail :"+ mailku + "\nTel : "+telku + "\nAuswahl : "+ Auswahl + "\nAnliegen : " + msg);
+      alert("Name : "+ nameko + "\nMail :"+ mailko + "\nTel : "+telko + "\nAuswahl : "+ auswahl + "\nAnliegen : " + msg);
 
       });
   </script>
